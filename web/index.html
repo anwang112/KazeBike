@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kaze Bike</title>
+    <title>Kaze Bike 首頁</title>
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
     <link type="text/css" href="csshake.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
-    
+
 
 
 </head>
@@ -29,12 +29,12 @@
             <div class="navbar-nav">
                 <ul class="main-menu">
                     <li>
-                        <a href="#">商品總覽 <br><span>Product</span></a>
+                        <a href="product.html">商品總覽 <br><span>Product</span></a>
                         <ul class="submenu">
-                            <li><a href="#">全館商品</a> </li>
-                            <li><a href="#">合作系列</a> </li>
-                            <li><a href="#">發燒新品</a> </li>
-                            <li><a href="#">熱銷排行</a> </li>
+                            <li><a href="product.html">全館商品</a> </li>
+                            <li><a href="product.html#new-arrival">發燒新品</a> </li>
+                            <li><a href="product.html#hotsale">熱銷排行</a> </li>
+                            <li><a href="product.html#cooperation">合作品牌</a> </li>
                         </ul>
                     </li>
                     <li>
@@ -47,10 +47,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">兌換K幣<br><span>K coins</span></a>
+                        <a href="#">兌換K幣<br><span>K-coins</span></a>
                         <ul class="submenu">
-                            <li><a href="#">查詢餘額</a> </li>
-                            <li><a href="#">兌換紀錄</a> </li>
+                            <li><a href="kcoins.html#overage">查詢餘額</a> </li>
+                            <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
                         </ul>
                     </li>
                     <li>
@@ -97,7 +97,7 @@
     <!-- 以下購物金三步驟 -->
     <div class="wrap kstep">
         <div class="kstep-item1">
-            <h2>簡單三步驟 輕鬆領K幣</h2>
+            <h2 class="title-h2">簡單三步驟 輕鬆領K幣</h2>
         </div>
         <div class="kstep-item2">
             <div class="ks-content1">
@@ -124,7 +124,7 @@
                     <h3>3.兌換K幣</h3>
                     <p>將騎乘里程數<br>
                         兌換成購物金K幣</p>
-                    <a href="#">手刀兌換</a>
+                    <a href="kcoins.html">手刀兌換</a>
                 </div>
             </div>
         </div>
@@ -136,14 +136,15 @@
                 <div class="tr-col-txt1">
                     <h3>健康就是金錢</h3>
                     <h5>享受騎乘 享用折抵</h4>
-                    <a href="">查看里程數</a>
+                        <a href="">查看里程數</a>
                 </div>
             </div>
             <div class="tr-col">
                 <img src="img/tr_02.png" alt="">
                 <div class="tr-col-txt2">
-                    <h3>健康就是金錢</h3>
-                    <p>馬上上傳里程數</p>
+                    <h3>金錢就是K幣</h3>
+                    <h5>1K = 1NTD</h5>
+                    <a href="kcoins.html#overage">查看K幣</a>
                 </div>
             </div>
         </div>
@@ -158,10 +159,12 @@
         <div class="product-bg">
             <img src="img/itembg.jpg" alt="">
         </div>
-        <div class="pro-title">
-            <h2>發燒新品</h2>
-            <span>New Arrival</span>
-        </div>
+        <a href="product.html">
+            <div class="pro-title">
+                <h2 class="title-h2">發燒新品</h2>
+                <span>New Arrival</span>
+            </div>
+        </a>
         <div class="product-item">
             <div class="product-col item1">
                 <div class="item-img">
@@ -244,7 +247,7 @@
                         <div class="item-txt">
                             <h4>防風運動休閒外套</h4>
                             <span><i class="fas fa-circle" style="color:#000"></i> <i class="fas fa-circle" style="color:#f00"></i></span><br>
-                            <span class="size">XXS-XXL</span><br><span class="price">$5980</span>
+                            <span class="size">S-XL</span><br><span class="price">$5980</span>
                         </div>
                     </a>
                 </div>
@@ -264,7 +267,7 @@
     <div class="wrap cor-brand">
         <div class="container">
             <div class="cor-brand-title">
-                <h2>合作品牌</h2>
+                <h2 class="title-h2">合作品牌</h2>
                 <span>Cooperation</span>
             </div>
             <div class="cor-brand-item">
@@ -300,7 +303,7 @@
     <div class="wrap news">
         <div class="new-banner">
             <div class="newsTitle">
-                <h2>活動資訊</h2>
+                <h2 class="title-h2">活動資訊</h2>
                 <span>Information</span>
             </div>
             <img src="img/new1.jpg" alt="">
@@ -328,7 +331,7 @@
                 <a href="#">
                     <img src="img/newsitem1.jpg" alt="">
                     <div class="txt-container">
-                        <h4>不倒騎士 騎出生命 <br>單車環台圓夢活動</h4>
+                        <h4>不倒騎士 騎出生命</h4>
                         <p>為鼓勵罹癌的朋友走出戶外，宣導社會大眾如何預防癌症。</p>
                     </div>
                 </a>

@@ -1,40 +1,16 @@
 
 .header{
-    width: 100%;
-    min-width: 960px;
-    height: 500px;
-    overflow: hidden;
     background-image: url("../img/kc2.jpg");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    position: relative;
-}
-.header-txt{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    color: #f5f5f5;
-    font-size: 34px;
-    text-align: center;
 }
 .main-content{
     width: 960px;
     height: 300px;
     background-color: #f5f5f5;
-    box-shadow: 1px 1px 0px #555,
-                2px 2px 0px #666,
-                3px 3px 0px #777,
-                4px 4px 0px #888,
-                5px 5px 0px #999,
-                6px 6px 0px #aaa,
-                7px 7px 0px #bbb,
-                7px 7px 12px #bbb;
+    box-shadow: 3px 3px 12px #555;
     text-align: center;
-    padding: 50px 50px 50px 150px;
+    padding: 50px 0px 50px 0px;
     position: relative;
-    top: -20px;
+    top: -80px;
     border-radius: 20px;
 }
 .kcircle{
@@ -46,9 +22,10 @@
     margin: -3px;
     float: left;
     perspective: 100px;
-    transform: rotateY(0deg);
+    position: absolute;
     transition: transform 1.5s;
-
+    backface-visibility: hidden;
+    margin-left: 65px;
 }
 .kc-title{
     width: 100%;
@@ -74,6 +51,21 @@
     float: left;
     right: 0;
     top: 0;
+    border-radius: 0px 15px 15px 0px;
+    transition: 0.5S
+}
+.front h4{
+    color: #364f6b;
+    padding-top: 30px;
+}
+.front .kc-title{
+    padding-top: 50px;
+}
+.front.kcircle{
+    transform: rotateY(0deg);
+}
+.back.kcircle{
+    transform: rotateY(180deg);
 }
 .k-btn h3{
     color: #f5f5f5;
@@ -96,17 +88,108 @@
     height: 40px;
     line-height: 2.5;
     margin: 10px;
+    position: relative;
+    top: 0;
     font-weight: 700;
     box-shadow: 1px 1px 0px #f5f5f5,
                 2px 2px 0px #ccc,
                 3px 3px 0px #aaa,
                 4px 4px 0px #888,
                 5px 5px 0px #777,
-                6px 6px 0px #555,
-                7px 7px 0px #444,
-                7px 7px 5px #444;
+                6px 6px 0px #444,
+                7px 7px 0px #222,
+                7px 7px 5px #222;
+    transition: .2s;
 }
-.kcircle:hover {
-    transform: rotateY(360deg);
+.k-btn li > a:hover{
+    top: 3px;
+    box-shadow: 1px 1px 0px #f5f5f5,
+                2px 1px 0px #ccc,
+                3px 2px 0px #aaa,
+                4px 2px 0px #888,
+                5px 3px 0px #777,
+                6px 3px 0px #444,
+                7px 4px 0px #222,
+                7px 4px 5px #222;
+}
 
+.main-col:hover .front{
+    transform: rotateY(180deg);
+}
+.main-col:hover .back{
+    transform: rotateY(360deg);
+}
+.exchange{
+    width: 100%;
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+}
+.exchange-title{
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+.exchange-title h2::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: #364f6b;
+    position: absolute;
+    left: 75px;
+    top: 62px;
+}
+.exchange-btn a{
+    color: #f5f5f5;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #364f6b;
+    border-radius: 15px;
+    width: 100px; 
+    height: 40px;
+    line-height: 2.5;
+    font-weight: 700;
+}
+.exchange-btn{
+    padding-top: 20px;
+}
+.table{
+    border-top: 1px solid #364f6b;
+    margin: auto;
+    color: #364f6b;
+}
+.table td{
+    width: 320px;
+    height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #364f6b;
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+}
+.exchange-detail{
+    padding-top: 50px;
+}
+.amt{
+    font-size: 36px;
+    font-weight: 1000;
+    opacity: .3;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+}
+.status{
+    color: #00adb5;
+}
+.status-use{
+    color: #ea5455;
+}
+.exchange-bg{
+    width: 960px;
+    margin: auto;
+}
+.footer{
+    margin-top: 0;
 }

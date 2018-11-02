@@ -1,0 +1,112 @@
+.header{
+    background-image: url("../img/kc3.jpg");
+}
+.search{
+    height: 100px;
+    background-color: #f5f5f5;
+    padding-right: 20px;
+    border-radius: 20px;
+    line-height: 6;
+    position: relative;
+    top: -40px;
+    border: 1px solid #364f6b;
+    box-shadow: 0 0 0 10px #f5f5f5,
+                3px 3px 12px 12px #ccc;
+}
+.search select{
+    display: inline-block;
+    margin-left: 50px;
+    width: 100px;
+    height: 25px;
+    border: 1px solid #5f5f5f;
+    color: #5f5f5f;
+}
+.search form{
+    float: right;
+    text-align: right;
+}
+.search-txt{
+    border-radius: 5px;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+}
+.submit-btn{
+    border-radius: 5px;
+    padding:5px 15px; 
+    border:0 none;
+}
+
+.main-pr{
+    width: 460px;
+    height: 460px;
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+.main-pr img{
+    width: 100%;
+}
+.subitem{
+    width: 220px;
+    background-color: #f4f4f4;
+    float: left;
+    margin: 10px;
+    height: 460px;
+    position: relative;
+}
+.subitem img{
+    width: 100%;
+}
+.subitem .pro-detail{
+    color: #364f6b;
+    line-height: 2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pro-title{
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
+
+.hot::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid #fe0;
+    border-left: 12px solid #fe0;
+    border-right: 12px solid #fe0;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+.na-pro{
+    position: relative;
+    width: 960px;
+    margin: auto;
+}
+#hotsale{
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+#new-arrival{
+    padding: 30px;
+}
+.main-pr a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+.main-pr:hover a{
+    opacity: 1;
+}
