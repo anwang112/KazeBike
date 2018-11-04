@@ -90,12 +90,15 @@
     width: 960px;
     margin: auto;
 }
+.na-hot{
+    padding: 30px;
+}
 #hotsale{
     width: 100%;
     background-color: #f4f4f4;
-    padding: 30px;
+    
 }
-#new-arrival{
+#new-arrival ,#cooperation{
     padding: 30px;
 }
 .main-pr a{

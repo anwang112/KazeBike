@@ -86,77 +86,7 @@
 .main-col:hover .back{
     transform: rotateY(360deg);
 }
-.exchange{
-    width: 100%;
-    background-color: #f4f4f4;
-    padding-bottom: 50px;
-}
-.exchange-title{
-    text-align: center;
-    padding-top: 50px;
-    position: relative;
-    width: 300px;
-    margin: auto;
-}
-.exchange-title h2::after{
-    content: '';
-    display: block;
-    width: 2px;
-    height: 20px;
-    background-color: #364f6b;
-    position: absolute;
-    left: 75px;
-    top: 62px;
-}
-.exchange-btn a{
-    color: #f5f5f5;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #364f6b;
-    border-radius: 15px;
-    width: 100px; 
-    height: 40px;
-    line-height: 2.5;
-    font-weight: 700;
-}
-.exchange-btn{
-    padding-top: 20px;
-}
-.table{
-    border-top: 1px solid #364f6b;
-    margin: auto;
-    color: #364f6b;
-}
-.table td{
-    width: 320px;
-    height: 100px;
-    text-align: center;
-    border-bottom: 1px solid #364f6b;
-    position: relative;
-    font-weight: 700;
-    font-size: 18px;
-}
-.exchange-detail{
-    padding-top: 50px;
-}
-.amt{
-    font-size: 36px;
-    font-weight: 1000;
-    opacity: .3;
-    position: absolute;
-    top: 15px;
-    left: 80px;
-}
-.status{
-    color: #00adb5;
-}
-.status-use{
-    color: #ea5455;
-}
-.exchange-bg{
-    width: 960px;
-    margin: auto;
-}
+
 .footer{
     margin-top: 0;
 }
