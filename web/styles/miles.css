@@ -103,11 +103,12 @@
 .status-page{
     width: 960px;
     margin: auto;
+    position: relative;
 }
 .status-btn{
     position: absolute;
-    top: 55%;
-    left: 15%;
+    top: 50%;
+    left: -55px;
 }
 .status-btn li{
     list-style: none;

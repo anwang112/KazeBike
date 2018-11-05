@@ -18,13 +18,16 @@
     position: fixed;
     z-index: 100;
     box-shadow: 0px 3px 20px #333;
-    font-family: "abc"
+    
 }
 .navbar-brand{
+    text-align: center;
     width: 100px;
+    height: 70px;
     line-height: 8;
     padding: 0 30px;
     float: left;
+    margin-top: -2px;
     /* transform-origin: 50% 20%; */
 }
 .navbar-brand img{
@@ -104,7 +107,8 @@
 .member a{
     color: #364f6b;
     display: inline-block;
-    width: 30px;
+    width: 40px;
+    text-align: center;
 }
 .header-content{
     max-width: 1380px;
@@ -189,7 +193,7 @@
     bottom: 100px;
     right: 0;
     color: #f5f5f5;
-    font-size: 34px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -315,8 +319,8 @@
     font-weight: 1000;
     opacity: .4;
     position: absolute;
-    top: 15px;
-    left: 80px;
+    top: 13px;
+    left: 65px;
 }
 .status{
     color: #00adb5;

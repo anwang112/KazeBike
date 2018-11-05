@@ -21,6 +21,11 @@
     background:#ccc; 
     border:0 none;
 }
+.submit-btn{
+    border-radius: 5px;
+    padding:5px 15px; 
+    border:0 none;
+}
 .page2col{
     display: flex;
     flex-flow: row;
@@ -46,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .little-pic{
     width: 220px;
@@ -60,13 +65,14 @@
 }
 .item-txt{
     width: 760px;
-    padding: 15px;
+    padding: 15px 15px 15px 20px;
     line-height: 2;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .title-h2{
     font-size: 22px;
     font-weight: 500;
+    padding-bottom: 20px;
 }
 .item-txt .color{
     text-decoration: none;
@@ -113,4 +119,8 @@
 .photo-float{
     float: right;
     width: 760px;
+}
+.overk{
+    font-size: 14px;
+    opacity: 0.5;
 }
