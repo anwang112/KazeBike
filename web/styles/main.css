@@ -148,6 +148,7 @@
 }
 .header-content{
     max-width: 1380px;
+    min-width: 880px;
     margin: auto;
 }
 .footer{
@@ -372,7 +373,7 @@
     width: 960px;
     margin: auto;
 }
-@media screen and (max-width:1180px) {
+@media screen and (max-width:767px) {
     .navbar .menu-btn{
         display: block;
         position: absolute;
@@ -405,35 +406,26 @@
         height: 100vh;
         background-color: #f4f4f4;
     }
+    .header-content{
+       width: 100%;
+    }
     
     .main-menu > li{
         float: none;
         width: 100%;
         height: auto;
+        padding: 20px 0;
     }
     .main-menu .submenu a{
         background-color: #43658c;
         color: #f4f4f4;
     }
-    .main-menu >li span{
-        transition: 2s;
-        opacity: 0;
-    }
-    
     .member{
+        position: absolute;
         line-height: 4;
-        float: right;
-        margin-right: 30px;
+        right: 0;
+        top: 0;
+        margin-right: 10px;
     }
-    .member a{
-        color: #364f6b;
-        display: inline-block;
-        width: 40px;
-        text-align: center;
-    }
-    .header-content{
-        max-width: 1380px;
-        margin: auto;
-    }
-    
+
 }

@@ -1,7 +1,6 @@
 
 .video{
     width: 100%;
-    min-width: 960px;
     padding-top: 70px;
     position: relative;
     /* height: 750px;
@@ -9,11 +8,9 @@
 }
 video{
     width:100%;
-    min-width: 960px;
 }
 .video .video-txt{
-    width: 50%;
-    min-width: 480px;
+    width: 55%;
     position: absolute;
     z-index:8;
     top: 40%;
@@ -551,4 +548,31 @@ video{
 }
 .newsTitle a,.cor-brand-title a{
     text-decoration: none;
+}
+@media screen and (max-width:767px){
+    .video{
+        width: 150%;
+    }
+    video{
+        width: 100%;
+    }
+    .video .video-txt h1{
+        font-size: 7vmin;
+    }
+    .video .video-txt span{
+        font-size: 5vmin;
+    }
+    .video-txt a{
+        background-color: #ea5455;
+        color: #f4f4f4;
+        font-weight: 700;
+        width: 50%;
+    }
+    .video .video-txt{
+        width: 100%;
+       display: flex;
+       flex-flow: column;
+       align-content: center;
+        
+    }
 }
