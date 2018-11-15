@@ -4,7 +4,43 @@
     font-family: 'Lato','Noto Sans','Microsoft JhengHei', sans-serif;
     /* outline: 1px solid #f00; */
 }
+#menu-control{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.navbar .menu-btn{
+    position: absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #f4f4f4;
+    top: 15px;
+    left: 15px;
+}
+.menu-btn span{
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 
+}
+
+.navbar .menu-btn::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #364f6b;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 8px 0px 0px #364f6b,
+                0px -8px 0px 0px #364f6b;
+}
 
 .wrap{
     width: 960px;
@@ -12,7 +48,6 @@
 }
 .navbar{
     width: 100%;
-    min-width: 960px;
     height: 70px;
     background-color: #f5f5f5;
     position: fixed;
@@ -40,8 +75,9 @@
     list-style: none;
     float: left;
     text-align: center;
-    position: relative;
+    background-color: #f4f4f4;
     width: 150px;
+    height: 70px;
 }
 .main-menu > li a{
     text-decoration: none;
@@ -335,4 +371,69 @@
 .exchange-bg{
     width: 960px;
     margin: auto;
+}
+@media screen and (max-width:1180px) {
+    .navbar .menu-btn{
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #f4f4f4;
+        top: 15px;
+        left: 15px;
+    }
+    .navbar-nav{
+        position: relative;
+        top: 70px;
+    }
+    .navbar-brand{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        float: none;
+        /* transform-origin: 50% 20%; */
+    }
+    .navbar-nav{
+        transform: translateX(-100%);
+        transition: .5s;
+    }
+    #menu-control:checked~nav .navbar-nav{
+        transform: translateX(0);
+    }
+    #navgation .header-content .navbar-nav{
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .main-menu > li{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .main-menu .submenu a{
+        background-color: #43658c;
+        color: #f4f4f4;
+    }
+    .main-menu >li span{
+        transition: 2s;
+        opacity: 0;
+    }
+    
+    .member{
+        line-height: 4;
+        float: right;
+        margin-right: 30px;
+    }
+    .member a{
+        color: #364f6b;
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+    }
+    .header-content{
+        max-width: 1380px;
+        margin: auto;
+    }
+    
 }

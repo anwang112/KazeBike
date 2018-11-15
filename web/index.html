@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <title>Kaze Bike 首頁</title>
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
@@ -20,7 +21,11 @@
 
 <body>
     <!-- 以下navbar -->
-    <div class="wrap navbar">
+    <input type="checkbox" id="menu-control">
+    <nav id="navgation" class="wrap navbar">
+        <label for="menu-control" class="menu-btn">
+            <span>menu</span>
+        </label>
         <div class="header-content">
             <div class="navbar-brand">
                 <a href="index.html">
@@ -74,7 +79,7 @@
             </div>
             <div class="clear-fix"></div>
         </div>
-    </div>
+    </nav>
 
 
 
