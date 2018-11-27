@@ -68,7 +68,7 @@
     background-color: #f5f5f5;
     position: fixed;
     z-index: 100;
-    box-shadow: 0px 3px 20px #333;
+    box-shadow: 0px 2px 10px #aaa;
     
 }
 .navbar-brand{
@@ -426,7 +426,10 @@
     }
     #menu-control:checked~nav .menu-btn::after{
         transform: rotate(-45deg);
-
+    
+    }
+    .mobile-a{
+        pointer-events: none;
     }
     .header-content{
        min-width: 100%;

@@ -572,23 +572,30 @@ video{
     }
     .video .video-txt{
         width: 100%;
-       display: flex;
-       flex-flow: column;
-       align-content: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
     }
     .kstep-item1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-        height: 120px;
+        height: 80px;
         position: relative;
         left: 0;
-        top: 50px;
-        background-color: #43658c;
+        padding-bottom: 15%;
     }
-    .kstep-item1 h2{
-        color: #f4f4f4;
+  
+    .kstep-item1 .title-h2{
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 5vmin;
+        width: 50%;
+        background-color: #f4f4f4;
+        border: 1px solid #364f6b;
     }
     .kstep-item1::before{
         display: none;
@@ -596,6 +603,13 @@ video{
     .circle{
         border: none;
         border-radius: 0%;
+        width: 100%;
+        height: 80px;
+    }
+    .circle-wrap{
+        width: 100%;
+        overflow: visible;
+        height: 80px;
     }
     .circle1{
         display: none;
@@ -615,12 +629,21 @@ video{
     }
     .ks-content .pic{
         width: 50%;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        height: 0;
+        padding-bottom: 50%;
+        background-color: #000;
+        border-radius: 50%;
+        position: relative;
     }
     .pic img{
         width: 100%;
-        position: relative;
-        top: 0;
-        left: -20%;
+        position: absolute;
+        top: -40%;
+        right: 20%;
+
     }
     .ks-content .step{
         width: 50%;
@@ -636,11 +659,9 @@ video{
     .ks-content .pic2{
         background-color: #E8E6E6;
         order: 1;
-        overflow: hidden;
     }
     .ks-content .pic3{
         background-color: #334964;
-        overflow: hidden;
     }
     .pic2 img{
         top: -30%;
@@ -652,24 +673,32 @@ video{
         opacity: 1;
     }
     .step h3{
-        font-size: 6vmin;
+        font-size: 4vmin;
     }
     .step p{
-        font-size: 4vmin;
+        font-size: 3vmin;
         line-height: 1.6;
     }
     .ks-content .col3{
         width: 50%;
         color: #364f6b;
         left: 0;
+        
     }
     .pic3 img{
         width: 100%;
         left: 15%;
-        top: -20px;
+        top: -35%;
     }
     .ks-content:hover img{
         opacity: 1;
+    }
+    .kstep-item4{
+        display: flex;
+        width: 100%;
+    }
+    .kstep-item3{
+        display: flex;
     }
 
     
