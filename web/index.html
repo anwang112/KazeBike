@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Kaze Bike 首頁</title>
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
@@ -13,12 +13,38 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 
 
 </head>
 
 <body>
+    <!-- login -->
+    <div class="loginWin">
+        <div class="wrap" id="loginform">
+            <div class="close"id="closeLogin">
+                <span></span>
+            </div>
+            <form action="" method="post">
+                    <div class="navbar-brand">
+                            <a href="index.html">
+                                <img src="img/logo3.png" alt="logo">
+                            </a>
+                        </div>
+                <input type="text" class="logObj logtxt" placeholder="帳號">
+                <input type="password" class="logObj logtxt"placeholder="密哪">
+                <input type="button" value="登入"class="logObj logbtn">
+                <input type="button" value="註冊"class="logObj logbtn regi">
+                <a href="#"class="fpsw">忘記密碼</a>
+
+
+            </form>
+
+
+        </div>
+    </div>
+
     <!-- 以下navbar -->
     <input type="checkbox" id="menu-control">
     <nav id="navgation" class="wrap navbar">
@@ -34,7 +60,7 @@
             <div class="navbar-nav">
                 <ul class="main-menu">
                     <li>
-                        <a href="product.html"class="mobile-a">商品總覽 <br><span>Product</span></a>
+                        <a class="mobile-a" href="javascript:;">商品總覽 <br><span>Product</span></a>
                         <ul class="submenu">
                             <li><a href="product.html">全館商品</a> </li>
                             <li><a href="product.html#new-arrival">發燒新品</a> </li>
@@ -72,7 +98,7 @@
                 <a href="#">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
-                <a href="#">
+                <a href="#"id="memLogin"title="登入">
                     <i class="fas fa-user-alt"></i>
                 </a>
             </div>
@@ -402,6 +428,9 @@
         <p>KazeBike © 2018</p>
 
     </div>
+    
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
