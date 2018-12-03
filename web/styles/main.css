@@ -1,9 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato','Noto Sans','Microsoft JhengHei', sans-serif;
+    font-family: 'neue','PingFang','Microsoft JhengHei', sans-serif;
     /* outline: 1px solid #f00; */
 }
+@font-face{
+    font-family: neue;
+    src: url('../font/HelveticaNeue.ttc');
+}
+@font-face{
+    font-family: PingFang;
+    src: url('../font/PingFang.ttc');
+}
+
 #menu-control{
     position: absolute;
     z-index: -1;
@@ -29,7 +38,6 @@
     overflow: hidden;
 
 }
-
 .navbar .menu-btn::before{
     content: '';
     display: block;

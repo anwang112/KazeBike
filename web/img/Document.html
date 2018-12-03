@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/JS/7roller.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin: auto;
+        }
+        table{
+            margin: auto;
+        }
+        table td{
+            border: 1px solid #ccc;
+            width: 100px;
+            height: 100px;
+        }
+        .highlight{
+            background-color: #ff0;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="搖獎" id="btnloto">
+    <table>
+        <tbody><tr>
+            <td id="column" class="c_1"></td>
+            <td id="column" class="c_2"></td>
+            <td id="column" class="c_3 highlight"></td>
+            <td id="column" class="c_4"></td>
+        </tr>
+        <tr>
+            <td id="column" class="c_12 highlight"></td>
+            <td id="column" colspan="2" rowspan="2"></td>
+            
+            <td id="column" class="c_5"></td>
+        </tr>
+        <tr>
+            <td id="column" class="c_11"></td>
+            <td id="column" class="c_6"></td>
+        </tr>
+        <tr>
+            <td id="column" class="c_10"></td>
+            <td id="column" class="c_9"></td>
+            <td id="column" class="c_8"></td>
+            <td id="column" class="c_7"></td>
+        </tr>
+    </tbody></table>
+    <script>
+    var btn=document.querySelector('#btnloto');
+    var timeId;
+    var speed = 200;
+    var money = rand(10,10000)*100
+    var steps = rand(12,60)
+
+
+    function rand(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        };
+
+    // function colRun(){
+    //     for (i=1;i<=12;i++){
+    //         document.querySelector('.c_'+i).classList.toggle('highlight');
+    //         if(i>1){
+    //         var b = i-1;
+    //         document.querySelector('.c_' +b).classList.toggle('highlight');
+    //         }
+    //     }
+    // }
+
+    function loto(){
+        steps -- ;
+        speed +=5;
+        tdClass = '.c_'+ (steps%12);
+        if(steps % 12 == 0){
+            document.querySelector('.c_'+12).classList.toggle('highlight');
+        }else{
+            document.querySelector('.c_'+ (steps%12)).classList.toggle('highlight');
+        }
+        if(steps = 0){
+            clearInterval(timeId);
+			document.querySelector(tdClass).innerText =money;
+        }
+
+
+        
+
+
+      
+        
+    }
+
+    function init(){
+        btn.onclick = loto;
+        timeId = setInterval(loto,speed)
+    }
+
+    addEventListener('load',init,false);
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
