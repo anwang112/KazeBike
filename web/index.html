@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
+
 
 
 </head>
@@ -23,88 +23,149 @@
     <!-- login -->
     <div class="loginWin">
         <div class="wrap" id="loginform">
-            <div class="close"id="closeLogin">
+            <div class="close" id="closeLogin">
                 <span></span>
             </div>
             <form action="" method="post">
-                    <div class="navbar-brand">
-                            <a href="index.html">
-                                <img src="img/logo3.png" alt="logo">
-                            </a>
-                        </div>
+                <div class="loginBN">
+                    <a href="news.html">
+                        <img src="img/new2.jpg" alt="logo">
+                    </a>
+                </div>
                 <input type="text" class="logObj logtxt" placeholder="帳號">
-                <input type="password" class="logObj logtxt"placeholder="密哪">
-                <input type="button" value="登入"class="logObj logbtn">
-                <input type="button" value="註冊"class="logObj logbtn regi">
-                <a href="#"class="fpsw">忘記密碼</a>
-
-
+                <input type="password" class="logObj logtxt" placeholder="密碼">
+                <input type="button" value="登入" class="logObj logbtn">
+                <input type="button" value="註冊" class="logObj logbtn regi">
+                <a href="#" class="fpsw">忘記密碼</a>
             </form>
-
-
         </div>
     </div>
+    <!-- login end-->
 
-    <!-- 以下navbar -->
-    <input type="checkbox" id="menu-control">
-    <nav id="navgation" class="wrap navbar">
-        <label for="menu-control" class="menu-btn">
-            <span>menu</span>
-        </label>
-        <div class="header-content">
-            <div class="navbar-brand">
-                <a href="index.html">
-                    <img src="img/logo3.png" alt="logo">
-                </a>
+
+
+
+
+    <!-- mobile menu -->
+    <div class="outWrap">
+        <input type="checkbox" id="menu-control">
+        <nav id="navgation" class="wrap navbar">
+            <label for="menu-control" class="menu-btn">
+                <span>menu</span>
+            </label>
+            <div class="mobileMenu">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="img/logo3.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar-mobile">
+                    <ul class="main-menu"id="mobiMenu">
+                        <li id="itemMenu">
+                            <a href="javascript:;">商品總覽 <i class="fas fa-caret-down"></i> <br><span>Product</span></a>
+                            <ul class="submenu">
+                                <li><a href="product.html">全館商品</a> </li>
+                                <li><a href="product.html#new-arrival">發燒新品</a> </li>
+                                <li><a href="product.html#hotsale">熱銷排行</a> </li>
+                                <li><a href="product.html#cooperation">合作品牌</a> </li>
+                            </ul>
+                        </li>
+                        <li id="mileMenu">
+                            <a href="javascript:;">我的里程數 <i class="fas fa-caret-down"></i><br><span>Miles</span></a>
+                            <ul class="submenu">
+                                <li><a href="miles.html">連結帳號</a> </li>
+                                <li><a href="miles.html">上傳／同步</a> </li>
+                                <li><a href="miles.html">統計報表</a> </li>
+                                <li><a href="miles.html">騎乘紀錄</a> </li>
+                            </ul>
+                        </li>
+                        <li id="kcoinsMenu">
+                            <a href="javascript:;">兌換K幣 <i class="fas fa-caret-down"></i><br><span>K-coins</span></a>
+                            <ul class="submenu">
+                                <li><a href="kcoins.html#overage">查詢餘額</a> </li>
+                                <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
+                            </ul>
+                        </li>
+                        <li id="actMenu">
+                            <a href="javascript:;">活動資訊 <i class="fas fa-caret-down"></i><br><span>information</span></a>
+                            <ul class="submenu">
+                                <li><a href="news.html">最新消息</a> </li>
+                                <li><a href="sale.html">優惠活動</a> </li>
+                                <li><a href="news.html">賽事資訊</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="member">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="#" class="memLogin" title="登入">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </div>
+                <div class="clear-fix"></div>
             </div>
-            <div class="navbar-nav">
-                <ul class="main-menu">
-                    <li>
-                        <a class="mobile-a" href="javascript:;">商品總覽 <br><span>Product</span></a>
-                        <ul class="submenu">
-                            <li><a href="product.html">全館商品</a> </li>
-                            <li><a href="product.html#new-arrival">發燒新品</a> </li>
-                            <li><a href="product.html#hotsale">熱銷排行</a> </li>
-                            <li><a href="product.html#cooperation">合作品牌</a> </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="miles.html" class="mobile-a">我的里程數<br><span>Miles</span></a>
-                        <ul class="submenu">
-                            <li><a href="miles.html">連結帳號</a> </li>
-                            <li><a href="miles.html">上傳／同步</a> </li>
-                            <li><a href="miles.html">統計報表</a> </li>
-                            <li><a href="miles.html">騎乘紀錄</a> </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="kcoins.html" class="mobile-a">兌換K幣<br><span>K-coins</span></a>
-                        <ul class="submenu">
-                            <li><a href="kcoins.html#overage">查詢餘額</a> </li>
-                            <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="news.html" class="mobile-a">活動資訊<br><span>information</span></a>
-                        <ul class="submenu">
-                            <li><a href="news.html">最新消息</a> </li>
-                            <li><a href="sale.html">優惠活動</a> </li>
-                            <li><a href="news.html">賽事資訊</a> </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="member">
-                <a href="#">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <a href="#"id="memLogin"title="登入">
-                    <i class="fas fa-user-alt"></i>
-                </a>
-            </div>
-            <div class="clear-fix"></div>
+        </nav>
+    </div>
+    <!-- end m-menu -->
+
+
+
+    <!-- 以下Web navbar -->
+    <div class="header-content">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img src="img/logo3.png" alt="logo">
+            </a>
         </div>
-    </nav>
+        <div id="navbar-nav">
+            <ul class="main-menu webMenu">
+                <li>
+                    <a href="product.html">商品總覽 <br><span>Product</span></a>
+                    <ul class="submenu">
+                        <li><a href="product.html">全館商品</a> </li>
+                        <li><a href="product.html#new-arrival">發燒新品</a> </li>
+                        <li><a href="product.html#hotsale">熱銷排行</a> </li>
+                        <li><a href="product.html#cooperation">合作品牌</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="miles.html">我的里程數<br><span>Miles</span></a>
+                    <ul class="submenu">
+                        <li><a href="miles.html">連結帳號</a> </li>
+                        <li><a href="miles.html">上傳／同步</a> </li>
+                        <li><a href="miles.html">統計報表</a> </li>
+                        <li><a href="miles.html">騎乘紀錄</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="kcoins.html">兌換K幣<br><span>K-coins</span></a>
+                    <ul class="submenu">
+                        <li><a href="kcoins.html#overage">查詢餘額</a> </li>
+                        <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="news.html">活動資訊<br><span>information</span></a>
+                    <ul class="submenu">
+                        <li><a href="news.html">最新消息</a> </li>
+                        <li><a href="sale.html">優惠活動</a> </li>
+                        <li><a href="news.html">賽事資訊</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="member">
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="#" class="memLogin2" title="登入">
+                <i class="fas fa-user-alt"></i>
+            </a>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
 
 
 
@@ -112,7 +173,6 @@
 
 
     <!-- 以下banner video -->
-
     <div class="wrap video">
         <video src="img/bannervideo.mp4" type="video/mp4" preload="auto" autoplay loop muted="muted">
         </video>
@@ -428,8 +488,8 @@
         <p>KazeBike © 2018</p>
 
     </div>
-    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/main.js"></script>
 </body>
 
