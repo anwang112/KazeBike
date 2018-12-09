@@ -20,7 +20,6 @@
     padding: 20px;
 }
 .left-menu{
-
     width: 192px;
     padding-top: 20px;
     display: flex;
@@ -76,9 +75,6 @@
     border-radius: 10px;
     height: 100px;
 }
-.main-content li{
-    list-style: none;
-}
 .item a{
     display: inline-block;
     text-decoration: none;
@@ -100,12 +96,76 @@
    
 }
 
-.main-content ul>li:hover .item{
-    box-shadow: 3px 3px 12px #ccc;
-} 
 .item .item-txt{
     width: 800px;
     text-align: left;
     padding-left: 180px;
     padding-top: 20px;
+}
+
+@media screen and (max-width:768px){
+    .page2col{
+        flex-flow: column wrap;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        
+    }
+    .left-menu{
+        width: 100%;
+        justify-content: center;
+    }
+    .left-menu ul{
+        display: flex;
+        padding: 20px 0;
+
+    }
+    .left-menu ul li{
+        padding:  0 30px;
+    }
+    .here::before{
+        left: 2px;
+    }
+    .left-menu li::after{
+        bottom: 0px;
+        left: -20px;
+    }
+    .main-content{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:415px){
+    .main-content{
+        width: 100%;
+    }
+    .main-content .item{
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+
+    }
+    .main-content .item a{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: auto;
+       
+    }
+    .item-img{
+        width: 100%;
+        height: auto;   
+    }
+    .item .item-txt{
+        width: 100%;
+        padding: 8px 10px 30px 10px;
+        box-sizing: border-box;
+    }
+    .left-menu ul{
+        width: 320px;
+    }
+    .left-menu li::after{
+        display: none;
+    }
+    
+
 }

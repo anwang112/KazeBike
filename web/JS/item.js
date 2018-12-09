@@ -31,10 +31,28 @@ window.addEventListener('scroll', function(){
 });
 
 
+//更多商品
+var listClass = document.querySelector('.mobil-list');
+var lastScrollY2 = 0;
+function item(){
+  var st = this.scrollY;
+  // 判斷是向上捲動，而且捲軸超過 200px
+  if(st>100){
+  if( st <= lastScrollY2) {
+    listClass.classList.add('hidelist');
+  }else{
+    listClass.classList.remove('hidelist');
+  }
+  lastScrollY2 = st;
+}
+};
+
+
 
 window.onload=function(){
     member.addEventListener('click',showloginWin,false);
     close.addEventListener('click',closeLoginF,false);
+    window.addEventListener('scroll',item,false);
 }
 
 

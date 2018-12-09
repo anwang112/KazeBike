@@ -1,12 +1,9 @@
 var member = document.querySelector('.memLogin');
 var close = document.querySelector('#closeLogin');
-var loginWin=document.querySelector('.loginWin');
 //登入視窗
 function showloginWin(){
+    loginWin=document.querySelector('.loginWin');
     if(member.title=="登入"){
-        loginWin.style.display='block';
-    }
-    if(member2.title=="登入"){
         loginWin.style.display='block';
     }
 }
@@ -30,11 +27,16 @@ window.addEventListener('scroll', function(){
 }
 });
 
+var img=document.querySelector('.little-circle');
+function rotate(){
+	img.setAttribute('style','transform:rotate(700deg)');
+}
 
 
 window.onload=function(){
     member.addEventListener('click',showloginWin,false);
     close.addEventListener('click',closeLoginF,false);
+    rotate();
 }
 
 
@@ -44,11 +46,6 @@ $('#mobiMenu li').click(function(){
     $(this).children('.submenu').stop(true).slideToggle();
     $('.submenu').not($(this).children('.submenu')).slideUp();
 });
-$('.mobil-list li').click(function(){
-    $(this).children('.sublist').stop(true).slideToggle();
-});
-
-
 
 //輪播
 $(document).ready(function(){

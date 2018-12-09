@@ -11,7 +11,7 @@ video{
     width: 55%;
     position: absolute;
     z-index:8;
-    top: 40%;
+    top: 35%;
     left: 50px;   
     color: #f5f5f5;
 }
@@ -24,24 +24,38 @@ video{
     opacity:1;
     font-size: 30px;
 }
-.video-txt a, .step a{
+.video-txt a, .step a,.tr-col a{
     text-decoration: none;
     display: inline-block;
-    color: #ea5455;
+    color: #f4f4f4;
+    background-color: #ea5455;
     font-weight: 700;
     width: 100px;
     height: 40px;
-    border: 1px solid #ea5455;
+    border: 3px solid transparent;
     font-size: 16px;
     text-align: center;
     line-height: 2.5;
     border-radius: 15px;
-    transition: 1s;
+    transition: .5s;
     margin-top: 10px;
 }
+.step a{
+    color:#ea5455;
+    border: 1px solid #ea5455;
+    background-color: rgb(244, 244, 244,0.5);
+}
+.tr-col a{
+    background-color: rgb(244, 244, 244,.8);
+    color: #ea5455;
+    height: 100px;
+    line-height: 6;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+}
 .video-txt:hover a{
-    background-color: #ea5455;
-    color: #f5f5f5;
+    border: 3px solid rgb(244, 244, 244,0.8);
 }
 .video-txt span:nth-child(1){
     transition-delay:.5s
@@ -58,7 +72,6 @@ video{
     height: 250px;
     position: absolute;
     top: 20px;
-    right: -50px;
     text-align: center;
     z-index: 5;
 }
@@ -100,6 +113,7 @@ video{
 .circle-wrap{
     width: 250px;
     height: 250px;
+    left: -25px;
     overflow: hidden;
     position: relative;
     border-radius: 50%
@@ -201,25 +215,11 @@ video{
     transition: .5s;
     text-shadow: 0px 3px 10px #333; 
 }
-.tr-col a{
-    text-decoration: none;
-    display: inline-block;
-    color: #ea5455;
-    background-color: rgb(245,245,245,0.5);
-    font-weight: 700;
-    width: 100px;
-    height: 40px;
-    border: 1px solid #ea5455;
-    font-size: 16px;
-    text-align: center;
-    line-height: 2.5;
-    border-radius: 15px;
-    transition: .8s;
-   
-}
-.tr-col a:hover{
+
+.tr-col a:hover {
+    color: #f4f4f4;
     background-color: #ea5455;
-    color: #f5f5f5;
+    border: 3px solid rgb(244, 244, 244,0.8);
 }
 .tr-col-txt1{
     position: absolute;
@@ -250,19 +250,13 @@ video{
 .tr-col img{
     filter: grayscale(50%);
     transition: .5s;
-
-    
 }
 .product{
     position: relative;
-   
-}
-.product .product-bg{
-    position: absolute;
-    top: 0;
-    left: -5px;
-    margin-top: -200px;
-    z-index: 1;
+    background-image: url(../img/itembg.jpg);
+    width: 960px;
+    background-position: -50px -200px;
+    background-repeat: no-repeat;
 }
 .pro-title h2{
     z-index: 3;
@@ -302,11 +296,7 @@ video{
     font-size: 20px;
 }
 .product-item{
-    position: absolute;
-    top: 180px;
-    left: 0px;
-    right: 0px;
-    z-index: 3;
+    padding-top: 200px;
 }
 .product-col{
     width: 320px;
@@ -318,7 +308,6 @@ video{
     width: 256px;
     height: 256px;
     border-radius: 50%;
-    background-color: #000;
     overflow: hidden;
     transition: all .5s 0s;
     position: relative;
@@ -367,17 +356,11 @@ video{
 .item-title{
     padding-top: 10px;
 }
-.product::after{
-    content: '';
-    display: block;
-    width: 960px;
-    height: 950px;
-    clear: both;
-}
 .cor-brand{
     width: 100%;
     background-color: #f4f4f4;
     text-align: center;
+    margin-top: 100px;
 }
 .container{
     padding: 30px;
@@ -395,11 +378,10 @@ video{
     height: 20px;
     background-color: #364f6b;
     position: absolute;
-    left: 405px;
+    left: calc(50% - 73px);
     top: 13px;
-    
 }
-.cor-brand-title h2::before{
+.cor-brand-title::before{
     content: '';
     display: block;
     width: 300px;
@@ -407,7 +389,8 @@ video{
     background-color: #000;
     position: absolute;
     bottom: 50px;
-    left: 330px;
+    left: 0;right: 0;
+    margin: 0 auto;
 }
 .cor-brand-title span,.newsTitle span{
     color: #364f6b;
@@ -441,31 +424,34 @@ video{
     font-size: 350%;
 }
 .cor-brand-item p{
-    padding: 9px;
-    text-align: left;
+    padding: 9px 20px;
+    text-align: center;
 }
 .news{
     padding: 80px 0 ;
-
 }
 .new-banner{
     position: relative;
     float: right;
 }
+.new-banner img{
+    opacity: 0.4;
+}
 .news-col{
     float: left;
+    position: relative;
+    top: -20px;
 }
 .news-item{
     position: relative;
-    width: 236px;
+    width: 100%;
     float: left;
-    margin: -15px 2px;
-    height: 335px;
+    height: auto;
     overflow: hidden;
     letter-spacing: 1px;
 }
 .news-item img{
-    width: 100%;
+    width: 80%;
 }
 .newsTitle::after{
     content: '';
@@ -494,20 +480,34 @@ video{
     width: 360px;
     float: left;
 }
-.news-item:hover{
-    box-shadow: 3px 3px 12px #ccc;
-}
+
 .news-item a{
     text-decoration: none;
     color: #364f6b;
 }
 .news-item h4{
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
 
 }
 .txt-container{
     padding: 0 10px 10px 10px;
+    position: relative;
+}
+.txt-container::before{
+    content: '';
+    display: block;
+    height: 60px;
+    z-index: -1;
+    width: 0%;
+    position: absolute;
+    bottom: 0;left: 0;
+    border-bottom: 5px solid #364f6b;
+    transition: .2s ease-out;
+    box-sizing: border-box;
+}
+.news-item:hover .txt-container::before{
+    width: 100%;
 }
 .slogan{
     width: 100%;
@@ -546,15 +546,14 @@ video{
 .newsTitle a,.cor-brand-title a{
     text-decoration: none;
 }
+
 @media screen and (max-width:768px){
-    .wrap{
-        width: 100%;
-    }
     .video{
-        width: 150%;
+        width: 100%;
+        overflow: hidden;
     }
     video{
-        width: 100%;
+        width: 150%;
     }
     .video .video-txt h1{
         font-size: 7vmin;
@@ -575,39 +574,55 @@ video{
         justify-content: center;
         align-content: center;
     }
+    .step a{
+        border: 1px solid #ea5455;
+        background-color: transparent;
+    }
     .kstep-item1{
         width: 100%;
         height: 80px;
         position: relative;
         left: 0;
-        padding-bottom: 15%;
+        padding-bottom: 10%;
     }
   
-    .kstep-item1 .title-h2{
+    .kstep-item1 .circle{
         position: relative;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
+        top: -35px;
+        margin: auto;
         box-sizing: border-box;
-        padding: 10px;
         font-size: 5vmin;
-        width: 50%;
+        width: 90%;
         background-color: #f4f4f4;
         border: 1px solid #364f6b;
+        border-radius: 20px;
+        height: auto;
+    }
+    .circle .title-h2{
+        padding: 10px;
+    }
+    .kstep-item1 .circle::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border: 20px solid #ddd;
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 30px);
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        z-index: 0;
     }
     .kstep-item1::before{
         display: none;
-    }
-    .circle{
-        border: none;
-        border-radius: 0%;
-        width: 100%;
-        height: 80px;
     }
     .circle-wrap{
         width: 100%;
         overflow: visible;
         height: 80px;
+        left: 0;
     }
     .circle1{
         display: none;
@@ -624,17 +639,18 @@ video{
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
     }
     .ks-content .pic{
         width: 50%;
         overflow: hidden;
         align-items: center;
         justify-content: center;
-        height: 0;
         padding-bottom: 50%;
-        background-color: #000;
         border-radius: 50%;
         position: relative;
+        margin: 10px;
     }
     .pic img{
         width: 100%;
@@ -644,12 +660,16 @@ video{
 
     }
     .ks-content .step{
-        width: 50%;
+        width: 45%;
         position: relative;
-        margin: 0;
     }
     .step h3{
         font-size: 4vmin;
+    }
+    .tr-col a:hover {
+        color: #ea5455;
+        background-color: #f4f4f4;
+        border: 3px solid rgb(244, 244, 244,0.8);
     }
     .ks-content .pic1{
         background-color: #FCE093;
@@ -681,7 +701,6 @@ video{
         width: 50%;
         color: #364f6b;
         left: 0;
-        
     }
     .pic3 img{
         width: 100%;
@@ -691,13 +710,218 @@ video{
     .ks-content:hover img{
         opacity: 1;
     }
-    .kstep-item4{
-        display: flex;
+    .kstep-item3{
+        top: 0;
+        left: 0;
+        margin-top: 80px;
         width: 100%;
     }
-    .kstep-item3{
+    .tr-col{
+        width: 50%;
+    }
+    .tr-col img{
+        width: 100%;
+    }
+    .trTxt{
+        font-size: 2.5vmin;
+    }
+    .product{
+        width: 100%;
+    }
+    .product-item{
+        width: 100%;
         display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .product-col{
+        width: 45%;
+        margin: 10px;
+        padding-bottom: 20%;
+    }
+    .product-col .item-img{
+        width: 100%;
+        border-radius: 0%;
+        margin: 0px;
+        overflow: visible;
+        padding-bottom: 60px;
+    }
+    .item1:hover .item-img{
+        transform:scale(1,1);
+    }
+    .item1 .item-txt{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .item-title{
+        display: none;
+    }
+    .cor-brand{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 0px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .cor-brand .container{
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+    .cor-brand-item{
+        width: calc(33% - 20px);
+    }
+    .cor-brand-item p{
+        font-size: 2.5vmin;
+        padding: 0 15px;
+    }
+    .cor-brand-item h3{
+        top: 20%;
+        right: 8%;
+        font-size: 5vmin;
+        color: #f5f5f5;
+        transition: 0.5s;
+        vertical-align: middle;
+    }
+    .cor-brand-item:hover h3{
+        font-size: 200%;
+    }
+    .new-banner{
+        width: 100%;
+        position: relative;
+    }
+    .newsTitle{
+        top: 40%;
+        left: 15px;
+    }
+    .news-item{
+        width: 100%;
+        padding-top: 10px;
     }
 
-    
+    .slogan{
+        display: none;
+    }
+    .news-item:hover .txt-container{
+        color: #364f6b;
+    }
+}
+@media screen and (max-width:415px){
+    .kstep-item1{
+        padding-bottom: 0%;
+    }
+    .circle .title-h2{
+        font-size: 7vmin;
+    }
+    .step h3{
+        font-size: 5vmin;
+    }
+    .step p{
+        font-size: 4vmin;
+        line-height: 1.6;
+    }
+    .trTxt h3,.trTxt h5{
+        display: none;
+    }
+    .kstep-item3{
+        display: none;
+    }
+    .product-col{
+        width: calc(50% - 20px);
+        margin: 10px;
+        padding-bottom: 0%;
+    }
+    .cor-brand-item{
+        width: 100%;
+    }
+    .cor-brand-item img{
+        margin-left: -18px;
+    }
+    .cor-brand-item p{
+       position: absolute;
+       top: 55%;
+       right: 8%;
+       color: #f4f4f4;
+       font-size: 5vmin;
+    }
+    .cor-brand-item h3{
+        top: 0;
+        line-height: 8;
+        font-size: 10vmin;
+    }
+    .cor-brand-item:hover h3{
+        font-size: 10vmin;
+    }
+    .new-banner img{
+        width: 100%;
+    }
+    .news-item{
+        width: auto;
+        padding: 15px 0 50px 0;
+    }
+    .news-col{
+        position: relative;
+        top: -20px;
+    }
+    .txt-container p{
+        display: none;
+        
+    }
+    .txt-container{
+        padding-top: 5px;
+        text-align: center;
+    }
+    .newsTitle{
+        top: 40%;
+        left: 20px;
+        width: 100%;
+    }
+    .news{
+        overflow: hidden;
+    }
+    .cor-brand{
+        overflow: hidden;
+    }
+    .tr-col img{
+       display: none;
+    }
+    .trTxt{
+        width: 98%;
+        position: relative;
+    }
+    .tr-col-txt1{
+        position: relative;
+        left: 0;
+        background-color: #364f6b;
+    }
+    .tr-col-txt2{
+        background-color: #FCE093;
+        left: 0;
+    }
+    .trTxt a{
+        border-radius: 50%;
+        width: 100%;
+        font-size: 7vmin;
+        color: #364f6b;
+        background-color: transparent;
+        height: auto;
+        top: 0;
+        line-height: 2;
+    }
+    .tr-col-txt1 a{
+        color: #f4f4f4;
+    }
+    .tr-col a:hover {
+        color: #f4f4f4;
+        background-color: transparent;
+        border: 3px solid rgb(244, 244, 244,0);
+    }
+    .kstep-item4{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .item1 .item-txt{
+        font-size: 4vmin;
+    }
 }

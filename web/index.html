@@ -9,15 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-    <link type="text/css" href="csshake.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-
-
-
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
 </head>
+
+
+
+
 
 <body>
     <!-- login -->
@@ -36,11 +37,14 @@
                 <input type="password" class="logObj logtxt" placeholder="密碼">
                 <input type="button" value="登入" class="logObj logbtn">
                 <input type="button" value="註冊" class="logObj logbtn regi">
-                <a href="#" class="fpsw">忘記密碼</a>
+                <a href="javascript:;" class="fpsw">忘記密碼</a>
             </form>
         </div>
     </div>
     <!-- login end-->
+
+
+
 
 
 
@@ -60,9 +64,9 @@
                     </a>
                 </div>
                 <div id="navbar-mobile">
-                    <ul class="main-menu"id="mobiMenu">
+                    <ul class="main-menu" id="mobiMenu">
                         <li id="itemMenu">
-                            <a href="javascript:;">商品總覽 <i class="fas fa-caret-down"></i> <br><span>Product</span></a>
+                            <a href="product.html">商品總覽 <i class="fas fa-caret-down"></i> <br><span>Product</span></a>
                             <ul class="submenu">
                                 <li><a href="product.html">全館商品</a> </li>
                                 <li><a href="product.html#new-arrival">發燒新品</a> </li>
@@ -71,7 +75,7 @@
                             </ul>
                         </li>
                         <li id="mileMenu">
-                            <a href="javascript:;">我的里程數 <i class="fas fa-caret-down"></i><br><span>Miles</span></a>
+                            <a href="miles.html">我的里程數 <i class="fas fa-caret-down"></i><br><span>Miles</span></a>
                             <ul class="submenu">
                                 <li><a href="miles.html">連結帳號</a> </li>
                                 <li><a href="miles.html">上傳／同步</a> </li>
@@ -80,14 +84,14 @@
                             </ul>
                         </li>
                         <li id="kcoinsMenu">
-                            <a href="javascript:;">兌換K幣 <i class="fas fa-caret-down"></i><br><span>K-coins</span></a>
+                            <a href="kcoins.html">兌換K幣 <i class="fas fa-caret-down"></i><br><span>K-coins</span></a>
                             <ul class="submenu">
                                 <li><a href="kcoins.html#overage">查詢餘額</a> </li>
                                 <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
                             </ul>
                         </li>
                         <li id="actMenu">
-                            <a href="javascript:;">活動資訊 <i class="fas fa-caret-down"></i><br><span>information</span></a>
+                            <a href="news.html">活動資訊 <i class="fas fa-caret-down"></i><br><span>Information</span></a>
                             <ul class="submenu">
                                 <li><a href="news.html">最新消息</a> </li>
                                 <li><a href="sale.html">優惠活動</a> </li>
@@ -97,10 +101,10 @@
                     </ul>
                 </div>
                 <div class="member">
-                    <a href="#">
+                    <a href="javascript:;">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
-                    <a href="#" class="memLogin" title="登入">
+                    <a href="javascript:;" class="memLogin" title="登入">
                         <i class="fas fa-user-alt"></i>
                     </a>
                 </div>
@@ -109,64 +113,6 @@
         </nav>
     </div>
     <!-- end m-menu -->
-
-
-
-    <!-- 以下Web navbar -->
-    <div class="header-content">
-        <div class="navbar-brand">
-            <a href="index.html">
-                <img src="img/logo3.png" alt="logo">
-            </a>
-        </div>
-        <div id="navbar-nav">
-            <ul class="main-menu webMenu">
-                <li>
-                    <a href="product.html">商品總覽 <br><span>Product</span></a>
-                    <ul class="submenu">
-                        <li><a href="product.html">全館商品</a> </li>
-                        <li><a href="product.html#new-arrival">發燒新品</a> </li>
-                        <li><a href="product.html#hotsale">熱銷排行</a> </li>
-                        <li><a href="product.html#cooperation">合作品牌</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="miles.html">我的里程數<br><span>Miles</span></a>
-                    <ul class="submenu">
-                        <li><a href="miles.html">連結帳號</a> </li>
-                        <li><a href="miles.html">上傳／同步</a> </li>
-                        <li><a href="miles.html">統計報表</a> </li>
-                        <li><a href="miles.html">騎乘紀錄</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="kcoins.html">兌換K幣<br><span>K-coins</span></a>
-                    <ul class="submenu">
-                        <li><a href="kcoins.html#overage">查詢餘額</a> </li>
-                        <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="news.html">活動資訊<br><span>information</span></a>
-                    <ul class="submenu">
-                        <li><a href="news.html">最新消息</a> </li>
-                        <li><a href="sale.html">優惠活動</a> </li>
-                        <li><a href="news.html">賽事資訊</a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="member">
-            <a href="#">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="#" class="memLogin2" title="登入">
-                <i class="fas fa-user-alt"></i>
-            </a>
-        </div>
-        <div class="clear-fix"></div>
-    </div>
-
 
 
 
@@ -190,7 +136,7 @@
     <!-- 以下購物金三步驟 -->
     <div class="wrap kstep">
         <div class="kstep-item1">
-            <a href="#">
+            <a href="javascript:;">
                 <div class="circle-wrap">
                     <div class="circle1 c1"></div>
                     <div class="circle">
@@ -208,8 +154,8 @@
                 <div class="step">
                     <h3>1.登入</h3>
                     <p>登入Kaze
-                        或是<br>連結Nike+ / Strava帳號</p>
-                    <a href="miles.html">立即登入</a>
+                        或是<br>連結Nike+/Strava帳號</p>
+                    <a href="javascript:;" class="memLogin3">立即登入</a>
                 </div>
             </div>
             <div class="ks-content">
@@ -240,15 +186,15 @@
         <div class="kstep-item4">
             <div class="tr-col">
                 <img src="img/tr_01.png" alt="">
-                <div class="tr-col-txt1">
+                <div class="tr-col-txt1 trTxt">
                     <h3>健康就是金錢</h3>
                     <h5>享受騎乘 享用折抵</h4>
                         <a href="miles.html">查看里程數</a>
                 </div>
             </div>
-            <div class="tr-col">
+            <div class="tr-col tr2">
                 <img src="img/tr_02.png" alt="">
-                <div class="tr-col-txt2">
+                <div class="tr-col-txt2 trTxt">
                     <h3>金錢就是K幣</h3>
                     <h5>1K = 1NTD</h5>
                     <a href="kcoins.html#overage">查看K幣</a>
@@ -263,9 +209,9 @@
 
     <!-- 以下商品專區 -->
     <div class="wrap product">
-        <div class="product-bg">
+        <!-- <div class="product-bg">
             <img src="img/itembg.jpg" alt="">
-        </div>
+        </div> -->
         <div class="pro-title">
             <a href="product.html">
                 <h2 class="title-h2">發燒新品</h2>
@@ -279,7 +225,7 @@
                     <a href="item.html">
                         <img src="img/p1.jpg" alt="">
                         <div class="item-txt">
-                            <h4>新款透氣長袖透氣騎行上衣</h4>
+                            <h4>透氣長袖透氣騎行上衣</h4>
                             <span><i class="fas fa-circle" style="color:#000"></i> <i class="fas fa-circle" style="color:#f00"></i></span>
                             <br>
                             <span class="size">S~XL</span>
@@ -287,7 +233,7 @@
                         </div>
                     </a>
                 </div>
-                <h4 class="item-title">新款透氣長袖透氣騎行上衣</h4>
+                <h4 class="item-title">透氣長袖透氣騎行上衣</h4>
             </div>
 
 
@@ -395,7 +341,7 @@
             </div>
             <div class="cor-brand-item">
                 <a href="product.html#cooperation"><img src="img/co3.jpg" alt="">
-                    <h3>Dare Bike</h3>
+                    <h3>DareBike</h3>
                     <p>只為頂級而生Dare Bike</p>
                 </a>
             </div>
@@ -420,46 +366,83 @@
             </div>
             <img src="img/new1.jpg" alt="">
         </div>
-        <div class="news-col">
-            <div class="news-item">
+        <div class="news-col owl-carousel owl-theme">
+            <div class="news-item item">
                 <a href="sale.html">
                     <img src="img/new2.jpg" alt="">
                     <div class="txt-container">
                         <h4>快閃週年慶</h4>
-                        <p>限定專區特價五折優惠！</p>
+                        <p>專區特價五折優惠</p>
                     </div>
                 </a>
             </div>
-            <div class="news-item">
+            <div class="news-item item">
                 <a href="sale.html">
                     <img src="img/new3.jpg" alt="">
                     <div class="txt-container">
                         <h4>超值自由配</h4>
-                        <p>車衣車褲自由配，兩件七五折！</p>
+                        <p>車衣車褲兩件七五折！</p>
                     </div>
                 </a>
             </div>
-            <div class="news-item">
+            <div class="news-item item">
                 <a href="news.html">
                     <img src="img/newsitem1.jpg" alt="">
                     <div class="txt-container">
-                        <h4>不倒騎士 騎出生命</h4>
-                        <p>為鼓勵罹癌的朋友走出戶外，宣導如何預防癌症。</p>
+                        <h4>不倒騎士騎出生命</h4>
+                        <p>騎行故事募集中～</p>
                     </div>
                 </a>
             </div>
-            <div class="news-item">
+            <div class="news-item item">
                 <a href="news.html">
                     <img src="img/new4.jpg" alt="">
                     <div class="txt-container">
-                        <h4>DARE 自行車展發表新品</h4>
-                        <p>全新TT勝利方程式──TSRf</p>
+                        <h4>DARE發表新品</h4>
+                        <p>全新勝利方程式TSRf</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item item">
+                <a href="sale.html">
+                    <img src="img/new5.gif" alt="">
+                    <div class="txt-container">
+                        <h4>兩千萬人都驚了</h4>
+                        <p>不老騎士勇闖K幣挑戰賽</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item item">
+                <a href="sale.html">
+                    <img src="img/new6.jpg" alt="">
+                    <div class="txt-container">
+                        <h4>寶可夢大遊行</h4>
+                        <p>單車騎GOGOGO!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item item">
+                <a href="news.html">
+                    <img src="img/newsitem1.jpg" alt="">
+                    <div class="txt-container">
+                        <h4>不倒騎士騎出生命</h4>
+                        <p>為鼓勵罹癌的朋友走出戶外</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item item">
+                <a href="news.html">
+                    <img src="img/new4.jpg" alt="">
+                    <div class="txt-container">
+                        <h4>DARE發表新品</h4>
+                        <p>勝利方程式TSRf</p>
                     </div>
                 </a>
             </div>
         </div>
         <div class="clear-fix"></div>
     </div>
+
 
 
     <!-- slogan -->
@@ -473,24 +456,29 @@
     <!-- footer -->
     <div class="wrap footer">
         <div class="footer-content">
-            <a href=""> <img src="img/logo.png" alt="logo"></a>
-            <ul>
-                <li><a href="">關於我們</a></li>
-                <li><a href="">常見問題</a></li>
-                <li><a href="">退換貨說明</a></li>
-                <li><a href="">聯絡Kaze</a></li>
-                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href=""><i class="fab fa-youtube-square"></i></a> </li>
-                <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
-            </ul>
-            <div class="clear-fix"></div>
+            <div class="footerUp">
+                <div class="ftlogo">
+                    <a href="">
+                        <img src="img/logo.png" alt="logo"></a>
+                </div>
+                <ul>
+                    <li><a href="">關於我們</a></li>
+                    <li><a href="">常見問題</a></li>
+                    <li><a href="">退換貨說明</a></li>
+                    <li><a href="">聯絡Kaze</a></li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube-square"></i></a> </li>
+                    <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+                </ul>
+            </div>
+            <p>KazeBike © 2018</p>
         </div>
-        <p>KazeBike © 2018</p>
-
+        <div class="clear-fix"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/owl.carousel.js"></script>
 </body>
 
 </html>

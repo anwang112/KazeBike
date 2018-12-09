@@ -4,73 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>最新消息 News</title>
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-    <link type="text/css" href="csshake.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/news.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- 以下navbar -->
-    <div class="wrap navbar">
-        <div class="header-content">
-            <div class="navbar-brand">
-                <a href="index.html">
-                    <img src="img/logo3.png" alt="logo">
-                </a>
+    <!-- login -->
+    <div class="loginWin">
+        <div class="wrap" id="loginform">
+            <div class="close" id="closeLogin">
+                <span></span>
             </div>
-            <div class="navbar-nav">
-                <ul class="main-menu">
-                    <li>
-                        <a href="product.html">商品總覽 <br><span>Product</span></a>
-                        <ul class="submenu">
-                            <li><a href="product.html">全館商品</a> </li>
-                            <li><a href="product.html#new-arrival">發燒新品</a> </li>
-                            <li><a href="product.html#hotsale">熱銷排行</a> </li>
-                            <li><a href="product.html#cooperation">合作品牌</a> </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="miles.html">我的里程數<br><span>Miles</span></a>
-                        <ul class="submenu">
-                            <li><a href="miles.html">連結帳號</a> </li>
-                            <li><a href="miles.html">上傳／同步</a> </li>
-                            <li><a href="miles.html">統計報表</a> </li>
-                            <li><a href="miles.html">騎乘紀錄</a> </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="kcoins.html">兌換K幣<br><span>K-coins</span></a>
-                        <ul class="submenu">
-                            <li><a href="kcoins.html#overage">查詢餘額</a> </li>
-                            <li><a href="kcoins.html#coin-record">兌換紀錄</a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="news.html">活動資訊<br><span>information</span></a>
-                        <ul class="submenu">
-                            <li><a href="news.html">最新消息</a> </li>
-                            <li><a href="sale.html">優惠活動</a> </li>
-                            <li><a href="news.html">賽事資訊</a> </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="member">
-                <a href="#">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <a href="#"><i class="fas fa-user-alt"></i>
-                </a>
-            </div>
-            <div class="clear-fix"></div>
+            <form action="" method="post">
+                <div class="loginBN">
+                    <a href="news.html">
+                        <img src="img/new2.jpg" alt="logo">
+                    </a>
+                </div>
+                <input type="text" class="logObj logtxt" placeholder="帳號">
+                <input type="password" class="logObj logtxt" placeholder="密碼">
+                <input type="button" value="登入" class="logObj logbtn">
+                <input type="button" value="註冊" class="logObj logbtn regi">
+                <a href="javascript:;" class="fpsw">忘記密碼</a>
+            </form>
         </div>
     </div>
+    <!-- login end-->
+
+
+
+
+
+    <!-- mobile menu -->
+    <div class="outWrap">
+        <input type="checkbox" id="menu-control">
+        <nav id="navgation" class="wrap navbar">
+            <label for="menu-control" class="menu-btn">
+                <span>menu</span>
+            </label>
+            <div class="mobileMenu">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="img/logo3.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar-mobile">
+                    <ul class="main-menu" id="mobiMenu">
+                        <li id="itemMenu">
+                            <a href="product.html">商品總覽 <i class="fas fa-caret-down"></i> <br><span>Product</span></a>
+                            <ul class="submenu">
+                                <li><a href="product.html">全館商品</a> </li>
+                                <li><a href="product.html#new-arrival">發燒新品</a> </li>
+                                <li><a href="product.html#hotsale">熱銷排行</a> </li>
+                                <li><a href="product.html#cooperation">合作品牌</a> </li>
+                            </ul>
+                        </li>
+                        <li id="mileMenu">
+                            <a href="miles.html">我的里程數 <i class="fas fa-caret-down"></i><br><span>Miles</span></a>
+                            <ul class="submenu">
+                                <li><a href="miles.html">連結帳號</a> </li>
+                                <li><a href="miles.html">上傳／同步</a> </li>
+                                <li><a href="miles.html">統計報表</a> </li>
+                                <li><a href="miles.html">騎乘紀錄</a> </li>
+                            </ul>
+                        </li>
+                        <li id="kcoinsMenu">
+                            <a href="kcoins.html">兌換K幣 <i class="fas fa-caret-down"></i><br><span>K-coins</span></a>
+                            <ul class="submenu">
+                                <li><a href="kcoins.html#overage">查詢餘額</a> </li>
+                                <li><a href="kcoins.html#coin-record">兌換紀錄</a> </li>
+                            </ul>
+                        </li>
+                        <li id="actMenu" class="active">
+                            <a href="news.html">活動資訊 <i class="fas fa-caret-down"></i><br><span>Information</span></a>
+                            <ul class="submenu">
+                                <li><a href="news.html">最新消息</a> </li>
+                                <li><a href="sale.html">優惠活動</a> </li>
+                                <li><a href="news.html">賽事資訊</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="member">
+                    <a href="javascript:;">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="javascript:;" class="memLogin" title="登入">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </nav>
+    </div>
+    <!-- end m-menu -->
+
+
 
 
 
@@ -97,73 +132,66 @@
             </ul>
         </div>
         <div class="main-content">
-            <ul>
-                <li>
-                    <div class="item">
-                        <a href="#">
-                            <div class="item-img">
-                                <img src="img/nw1.jpg" alt="">
-                            </div>
-                            <div class="item-txt">
-                                <h3>兩千萬人都驚呆了！不老騎士環島，勇闖5000K幣挑戰賽</h3>
-                                <span>2018/10/31</span>
-                            </div>
-                        </a>
+            <div class="item">
+                <a href="#">
+                    <div class="item-img">
+                        <img src="img/nw1.jpg" alt="">
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#">
-                            <div class="item-img">
-                                <img src="img/nw2.jpg" alt="">
-                            </div>
-                            <div class="item-txt">
-                                <h3>寶可夢大遊行，單車族gogo</h3>
-                                <span>2018/10/25</span>
-                            </div>
-                        </a>
+                    <div class="item-txt">
+                        <h3>兩千萬人都驚呆了！不老騎士環島，勇闖5000K幣挑戰賽</h3>
+                        <span>2018/10/31</span>
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#">
-                            <div class="item-img">
-                                <img src="img/nw4.jpg" alt="">
-                            </div>
-                            <div class="item-txt">
-                                <h3>ㄧ日雙塔不夠看，試試一日雙起司塔</h3>
-                                <span>2018/10/20</span>
-                            </div>
-                        </a>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="item-img">
+                        <img src="img/nw2.jpg" alt="">
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#">
-                            <div class="item-img">
-                                <img src="img/new4.jpg" alt="">
-                            </div>
-                            <div class="item-txt">
-                                <h3>DARE 自行車展發表新品</h3>
-                                <span>2018/10/18</span>
-                            </div>
-                        </a>
+                    <div class="item-txt">
+                        <h3>寶可夢大遊行，單車族gogo</h3>
+                        <span>2018/10/25</span>
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#">
-                            <div class="item-img">
-                                <img src="img/new3.jpg" alt="">
-                            </div>
-                            <div class="item-txt">
-                                <h3>5000K幣挑戰賽開始報名</h3>
-                                <span>2018/10/15</span>
-                            </div>
-                        </a>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="item-img">
+                        <img src="img/nw4.jpg" alt="">
                     </div>
-                </li>
-            </ul>
+                    <div class="item-txt">
+                        <h3>ㄧ日雙塔不夠看，試試一日雙起司塔</h3>
+                        <span>2018/10/20</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="item-img">
+                        <img src="img/new4.jpg" alt="">
+                    </div>
+                    <div class="item-txt">
+                        <h3>DARE 自行車展發表新品</h3>
+                        <span>2018/10/18</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="item-img">
+                        <img src="img/new3.jpg" alt="">
+                    </div>
+                    <div class="item-txt">
+                        <h3>5000K幣挑戰賽開始報名</h3>
+                        <span>2018/10/15</span>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
 
@@ -171,20 +199,27 @@
     <!-- footer -->
     <div class="wrap footer">
         <div class="footer-content">
-            <a href="index.html"> <img src="img/logo.png" alt="logo"></a>
-            <ul>
-                <li><a href="">關於我們</a></li>
-                <li><a href="">常見問題</a></li>
-                <li><a href="">退換貨說明</a></li>
-                <li><a href="">聯絡Kaze</a></li>
-                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href=""><i class="fab fa-youtube-square"></i></a> </li>
-                <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
-            </ul>
-            <div class="clear-fix"></div>
+            <div class="footerUp">
+                <div class="ftlogo">
+                    <a href=""> <img src="img/logo.png" alt="logo"></a>
+                </div>
+                <ul>
+                    <li><a href="">關於我們</a></li>
+                    <li><a href="">常見問題</a></li>
+                    <li><a href="">退換貨說明</a></li>
+                    <li><a href="">聯絡Kaze</a></li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube-square"></i></a> </li>
+                    <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+                </ul>
+            </div>
+            <p>KazeBike © 2018</p>
         </div>
-        <p>KazeBike © 2018</p>
+        <div class="clear-fix"></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/owl.carousel.js"></script>
 
 </body>
 

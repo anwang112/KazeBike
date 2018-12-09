@@ -8,24 +8,28 @@
     background-color: #f5f5f5;
     box-shadow: 3px 3px 12px #555;
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px;
     position: relative;
     top: -80px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.main-col{
+    display: flex;
+    width: 50%;
+    height: 400px;
+    align-items: center;
+
 }
 .kcircle{
-    width: 300px;
-    height: 300px;
-    border: 2px solid #364f6b;
+    width: 350px;
+    height: 350px;
+    border: 2px solid #f4f4f4;
     border-radius: 50%;
     overflow: hidden;
     margin: -3px;
-    float: left;
-    perspective: 100px;
-    position: absolute;
-    transition: transform 1.5s;
-    backface-visibility: hidden;
-    margin-left: 65px;
+    margin: auto;
 }
 .kc-title{
     width: 100%;
@@ -44,49 +48,102 @@
     
 }
 .k-btn{
-    width: 530px;
+    width: 50%;
     height: 400px;
-    position: absolute;
     background-color: #364f6b;
-    float: left;
-    right: 0;
-    top: 0;
     border-radius: 0px 15px 15px 0px;
     transition: 0.5S
 }
-.front h4{
-    color: #364f6b;
-    padding-top: 30px;
-}
-.front .kc-title{
+
+.kcircle .kc-title{
     padding-top: 50px;
 }
-.front.kcircle{
-    transform: rotateY(0deg);
-}
-.back.kcircle{
-    transform: rotateY(180deg);
-}
+
 .k-btn h3{
     color: #f5f5f5;
-    line-height: 9;
+    line-height: 7;
     font-size: 24px;
 }
-.k-btn ul{
-    margin: -70px;
-}
+
 .k-btn ul li{
     list-style: none;
 }
 
 
-.main-col:hover .front{
-    transform: rotateY(180deg);
-}
-.main-col:hover .back{
-    transform: rotateY(360deg);
-}
-
 .footer{
     margin-top: 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .main-content{
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-flow: column wrap;
+        height: auto;
+        padding: 0;
+    }
+    .main-col{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: 70%;
+        padding: 10px;
+        display: flex;
+        box-sizing: border-box;
+
+    }
+    .k-btn{
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+        position: relative;
+        border-radius: 15px;
+    }
+    .kcircle{
+        width: 70%;
+        height: 0;
+        padding-bottom: 70%;
+        position: relative;
+        margin: auto;
+        border: 2px solid #364f6b;
+    }
+    .k-btn ul{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    .kcircle p{
+        padding-top: 25px;
+    }
+    .k-btn h3{
+        line-height: 4;
+        font-size: 24px;
+    }
+    .time{
+        color: #f4f4f4;
+        position: relative;
+        left: -20px;
+        bottom: -5px;
+    }
+}
+@media screen and (max-width: 414px){
+    .exchange-detail .table td{
+        font-size: 5vmin;
+    }
+    .kcircle p{
+        font-size: 22vmin;
+        padding: 0px;
+    }
+    .kcircle .kc-title{
+        padding: 0;
+    }
+    .k-btn a{
+        margin: 5px;
+        
+    }
+
+
 }

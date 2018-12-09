@@ -56,9 +56,6 @@
 .item-photo{
     width: 320px;
 }
-.item-photo{
-    width: 100%;
-}
 .little-pic{
     width: 320px;
     height: 100px;
@@ -133,4 +130,118 @@
 .overk{
     font-size: 14px;
     opacity: 0.5;
+}
+.mobil-list{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .search{
+        width: 100%;
+        min-width: 0px;
+        background-color: #364f6b;
+    }
+    .search-bg{
+        width: 100%;
+        
+    }
+    .search-bg form{
+       padding-right: 10px;
+    }
+    
+    .more-photo{
+        width: 100%;
+    }
+    .photo-float{
+        width: 100%;
+    }
+    .photo-title{
+        text-align: center;
+    }
+    .photo{
+        text-align: center;
+    }
+    .photo img{
+        width: 80%;
+    }
+    .item-list{
+        padding: 20px;
+    }
+    .item-list li a{
+        width: 100px;
+        height: 50px;
+        font-size: 2.5vmin;
+    }
+    .submit-btn{
+        background-color: #f4f4f4;
+    }
+}
+@media screen and (max-width:415px) {
+    .page2col{
+        overflow: hidden;
+        flex-flow: column wrap;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .item-list{
+        display: none;
+    }
+    .item-detail{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .item-txt{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        width: 80%;
+        margin: 0;
+    }
+    .item-photo{
+        padding-top: 20px;
+        width: 80%;
+    }
+    .title-h2{
+        padding: 0;
+    }
+    .little-pic{
+        display: none;
+    }
+    .item-photo img{
+        width: 100%;
+    }
+    .mobil-list{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #364f6b;
+        color: #f4f4f4;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        font-size: 4.5vmin;
+        border-top: 2px solid #f4f4f4;
+        z-index: 10;
+    }
+    .mobil-list .sublist{
+        display: none;
+    }
+    .sublist li a{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ddd;
+        position: relative;
+        top: 10px;
+        color: #364f6b;
+        border-bottom: 1px solid rgb(255, 255, 255,0.7);
+    }
+    .hidelist{
+        display: none;
+    }
 }
