@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
 }
+
 @font-face {
     font-family: PingFang;
     src: url('../font/PingFang-SC-Regular.ttf');
@@ -532,6 +533,9 @@ form .navbar-brand {
     opacity: 1;
 }
 @media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
     .wrap {
         width: 100%;
         min-width: 320px;
@@ -649,6 +653,9 @@ form .navbar-brand {
     }
     .main-menu li:hover .submenu {
         display: none;
+    }
+    .main-menu li:hover>a span {
+        color: #364f6b;
     }
     .main-menu>li.active>a {
         color: #364f6b;

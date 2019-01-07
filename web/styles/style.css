@@ -46,8 +46,8 @@ video{
     background-color: rgb(244, 244, 244,0.5);
 }
 .tr-col a{
-    background-color: rgb(244, 244, 244,.8);
-    color: #ea5455;
+    background-color: rgba(167, 167, 167, 0.8);
+    color: #f4f4f4;
     height: 100px;
     line-height: 6;
     border-radius: 50%;
