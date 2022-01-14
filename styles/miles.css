@@ -1,0 +1,242 @@
+.header{
+    background-image: url('../img/kc6.jpg')
+}
+.miles-title{
+    width: 960px;
+    height: 100px;
+    background-color: #eee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    top: -40px;
+    box-shadow: 3px 3px 12px #555;
+}
+.main-content{
+    padding-bottom: 30px;
+    position: relative;
+}
+.miles-title p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.miles-title::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 15px solid #ddd;
+    position: absolute;
+    bottom: -30px;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    z-index: 2;
+}
+.miles-circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    border: 70px solid #364f6b;
+    background-color: #eee;
+}
+.little-circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 700px 0 0 0;
+    margin: auto;
+    position: absolute;
+    top: -69px;
+    left: -69px;
+    border: 68px solid #587ba4;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+    transition: transform 4s cubic-bezier(.67,2.09,.63,.55);
+}
+
+.miles-circle:hover .little-circle{
+    transform: rotate(100deg);
+}
+.circle-txt{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+.circle-txt h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #364f6b;
+}
+.miles-count{
+    font-size: 80px;
+    font-weight: 700;
+}
+.level{
+    font-size: 20px;
+}
+.fa-award{
+    color: #8e6747;
+}
+.siliver{
+    color: #a7abb0
+}
+.status-bg{
+    padding-top: 50px;
+    width: 100%;
+    min-width: 960px;
+    margin: auto;
+    text-align: center;
+    background-color: #f4f4f4;
+    position: relative;
+}
+.status-page{
+    width: 960px;
+    margin: auto;
+    position: relative;
+}
+.status-btn{
+    position: absolute;
+    top: 50%;
+    left: -55px;
+}
+.status-btn li{
+    list-style: none;
+}
+.miles-btn li{
+    list-style: none;
+}
+.miles-btn li a{
+    text-align: center;
+}
+.miles-btn{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.footer{
+    margin: 0;
+}
+.status{
+    color: #587ba4;
+}
+
+@media screen and (max-width:768px){
+    .miles-title{
+        width: 95%;
+        margin: auto;
+    }
+    .miles-title p{
+        font-weight: 500;
+    }
+    .circle-txt{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .circle-txt h2{
+        font-size: 7vmin;
+    }
+    .miles-count{
+        font-size: 10vmin;
+        font-weight: 700;
+    }
+    .main-content{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .miles-btn{
+        position: relative;
+        top: 0;
+    }
+    .k-btn a{
+        width: 50%;
+    }
+    .miles-btn ul li{
+        width: 100%;
+        text-align: center;
+    }
+    .status-bg{
+        min-width: 0;
+        padding: 20px 0 0 0;
+    }
+    .status-page{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+    }
+    .status-page img{
+        width: 110%;
+    }
+    .status-btn{
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .status{
+        color: #f4f4f4;
+    }
+    
+
+}
+@media screen and (max-width: 414px){
+    .miles-circle{
+        width: 80%;
+        padding-bottom: 80%;
+        height: 0;
+        border: 30px solid #364f6b;
+        position: relative;
+        
+    }
+    .littleWrap{
+        width: 100%;
+        position: relative;
+        padding-bottom: 100%;
+        border: 30px solid transparent;
+        top: -30px;
+        left: -30px;
+    }
+    .little-circle{
+        width: 50%;
+        height: 0px;
+        padding-bottom: 50%;
+        top: -30px;
+        left: -30px;
+        border: 30px solid #587ba4;
+        border-bottom: none;
+        border-right: none;
+        transform-origin: bottom right;
+    }
+  
+    .miles-title p{
+        font-weight: 500;
+        font-size: 5vmin;
+    }
+    .amt{
+        font-size: 9vmin;
+        top: 0px;
+    }
+    .exchange-detail .table td{
+        font-size: 5vmin;
+    }
+    
+}
